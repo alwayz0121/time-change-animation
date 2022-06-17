@@ -1,0 +1,81 @@
+.bg-icon {
+  width: 1000px;
+  height: 400px;
+  position: absolute; /*section 아래에 텍스트 삽입할 공간 확보*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+}
+
+.bg-icon__sky {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.bg-icon__sky__sun {
+  position: absolute;
+  top: -150px;
+  left: 50%;
+  margin-left: -100px;
+  transform-origin: center 500px; /*태양 중심축을 아래로 500만큼 이동 => 이후에 animation 적용시 section 전체 영역에서 크게 타원을 그리며 회전*/
+  animation: sun linear 20s infinite;
+}
+
+.bg-icon__sky__cloud1 {
+  position: absolute;
+  top: -30px;
+  left: 10%;
+  animation: flow linear 10s infinite;
+}
+.bg-icon__sky__cloud2 {
+  position: absolute;
+  top: 20px;
+  left: 0%;
+  animation: flow linear 20s infinite;
+}
+
+.bg-icon__town__circle {
+  position: absolute; /*건물 이미지 뒤에 배치*/
+  bottom: 104px;
+  left: 50%;
+  margin-left: -165px;
+  opacity: 0.7;
+  animation: rotation linear 20s infinite;
+}
+
+.bg-icon__town__night {
+  position: absolute;
+  bottom: 0px;
+  left: 40px;
+}
+
+.bg-icon__town__day {
+  position: absolute;
+  bottom: 0px;
+  left: 40px;
+  animation: day linear 20s infinite;
+}
+
+.bg-icon__people {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  animation: day linear 20s infinite;
+}
+
+.bg-icon__people__man {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  animation: flow linear 7s infinite;
+}
+
+.bg-icon__people__family {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  animation: flow linear 20s infinite;
+}

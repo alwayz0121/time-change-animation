@@ -1,0 +1,29 @@
+@charset "utf-8";
+@import url("https://fonts.googleapis.com/css?family=Poiret+One");
+@import "bg-icon.css";
+@import "keyframes.css";
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /*자식 콘텐츠가 브라우저 벗어나도 스크롤 바 X*/
+  background-color: #b1e1e2;
+  animation: sky linear 20s infinite;
+}
+
+.title {
+  width: 1000px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 150%);
+  font: 92px/1 "Poiret one";
+  color: #fff;
+  text-align: center;
+  animation: day linear 20s infinite;
+}
